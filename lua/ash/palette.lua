@@ -9,7 +9,7 @@ return {
     surface2 = "#555873",
     surface1 = "#31323c",
     surface0 = "#1e2122",
-    base = "#0a0a0b",
+    base = "#0a0a0c",
     mantle = "#020203",
     crust = "#000000",
     rosewater = "#8dd3c3",
