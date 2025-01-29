@@ -2,8 +2,8 @@
 
 A dark theme for Neovim.
 
-<img src="static/sc_01.png" alt="screenshot" />
-<img src="static/sc_02.png" alt="screenshot" />
+<img src="https://github.com/user-attachments/assets/b49e456d-559d-4fb8-b849-a4d985d617e1" />
+<img src="https://github.com/user-attachments/assets/1538ef93-958f-48c2-a80c-4159a650b9c0" />
 
 ## Installation
 
