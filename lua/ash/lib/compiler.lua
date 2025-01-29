@@ -46,7 +46,7 @@ local h = vim.api.nvim_set_hl]],
         o.compile_path = o.compile_path:gsub("/", "\\")
     end
 
-    local highlights = o.highlights and o.highlights(p) or {}
+    local highlights = type(o.highlights) == "function" and o.highlights(p) or o.highlights or {}
     local tbl = vim.tbl_deep_extend("keep", highlights, groups.editor(o), groups.syntax(o))
 
     -- integrations
