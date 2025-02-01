@@ -4,7 +4,7 @@ local function groups(o)
     return o.transparent
             and {
                 TreesitterContextBottom = { sp = p.dim, style = { "underline" } },
-                TreesitterContextLineNumber = { fg = p.rosewater },
+                TreesitterContextLineNumber = { fg = p.seafoam },
             }
         or {
             TreesitterContextBottom = {

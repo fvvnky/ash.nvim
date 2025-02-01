@@ -5,14 +5,14 @@ local function groups(o)
     local hl = {
         RenderMarkdownCode = { bg = p.mantle },
         RenderMarkdownpodeInline = { bg = p.surface0 },
-        RenderMarkdownBullet = { fg = p.sky },
-        RenderMarkdownTableHead = { fg = p.blue },
-        RenderMarkdownTableRow = { fg = p.lavender },
-        RenderMarkdownSuccess = { fg = p.green },
-        RenderMarkdownInfo = { fg = p.sky },
-        RenderMarkdownHint = { fg = p.teal },
-        RenderMarkdownWarn = { fg = p.yellow },
-        RenderMarkdownError = { fg = p.red },
+        RenderMarkdownBullet = { fg = p.slate },
+        RenderMarkdownTableHead = { fg = p.charcoal },
+        RenderMarkdownTableRow = { fg = p.fog },
+        RenderMarkdownSuccess = { fg = p.sage },
+        RenderMarkdownInfo = { fg = p.slate },
+        RenderMarkdownHint = { fg = p.tide },
+        RenderMarkdownWarn = { fg = p.rust },
+        RenderMarkdownError = { fg = p.crimson },
     }
 
     local syntax = require("ash.groups.syntax")(o)

@@ -21,13 +21,13 @@ local function groups(o)
 
         -- Tabs
         tab = { fg = p.surface1, bg = inactive_bg },
-        tab_selected = { fg = p.sky, bg = active_bg, bold = true },
+        tab_selected = { fg = p.slate, bg = active_bg, bold = true },
         tab_separator = { fg = separator_fg, bg = inactive_bg },
         tab_separator_selected = { fg = separator_fg, bg = active_bg },
 
-        tab_close = { fg = p.red, bg = inactive_bg },
-        indicator_visible = { fg = p.peach, bg = inactive_bg, style = styles },
-        indicator_selected = { fg = p.peach, bg = active_bg, style = styles },
+        tab_close = { fg = p.crimson, bg = inactive_bg },
+        indicator_visible = { fg = p.frost, bg = inactive_bg, style = styles },
+        indicator_selected = { fg = p.frost, bg = active_bg, style = styles },
 
         -- Separators
         separator = { fg = separator_fg, bg = inactive_bg },
@@ -38,7 +38,7 @@ local function groups(o)
         -- Close buttons
         close_button = { fg = p.surface1, bg = inactive_bg },
         close_button_visible = { fg = p.surface1, bg = inactive_bg },
-        close_button_selected = { fg = p.red, bg = active_bg },
+        close_button_selected = { fg = p.crimson, bg = active_bg },
 
         -- Empty fill
         fill = { bg = bg_highlight },
@@ -49,36 +49,36 @@ local function groups(o)
         numbers_selected = { fg = p.subtext0, bg = active_bg, style = styles },
 
         -- Errors
-        error = { fg = p.red, bg = inactive_bg },
-        error_visible = { fg = p.red, bg = inactive_bg },
-        error_selected = { fg = p.red, bg = active_bg, style = styles },
-        error_diagnostic = { fg = p.red, bg = inactive_bg },
-        error_diagnostic_visible = { fg = p.red, bg = inactive_bg },
-        error_diagnostic_selected = { fg = p.red, bg = active_bg },
+        error = { fg = p.crimson, bg = inactive_bg },
+        error_visible = { fg = p.crimson, bg = inactive_bg },
+        error_selected = { fg = p.crimson, bg = active_bg, style = styles },
+        error_diagnostic = { fg = p.crimson, bg = inactive_bg },
+        error_diagnostic_visible = { fg = p.crimson, bg = inactive_bg },
+        error_diagnostic_selected = { fg = p.crimson, bg = active_bg },
 
         -- Warnings
-        warning = { fg = p.yellow, bg = inactive_bg },
-        warning_visible = { fg = p.yellow, bg = inactive_bg },
-        warning_selected = { fg = p.yellow, bg = active_bg, style = styles },
-        warning_diagnostic = { fg = p.yellow, bg = inactive_bg },
-        warning_diagnostic_visible = { fg = p.yellow, bg = inactive_bg },
-        warning_diagnostic_selected = { fg = p.yellow, bg = active_bg },
+        warning = { fg = p.rust, bg = inactive_bg },
+        warning_visible = { fg = p.rust, bg = inactive_bg },
+        warning_selected = { fg = p.rust, bg = active_bg, style = styles },
+        warning_diagnostic = { fg = p.rust, bg = inactive_bg },
+        warning_diagnostic_visible = { fg = p.rust, bg = inactive_bg },
+        warning_diagnostic_selected = { fg = p.rust, bg = active_bg },
 
         -- Infos
-        info = { fg = p.sky, bg = inactive_bg },
-        info_visible = { fg = p.sky, bg = inactive_bg },
-        info_selected = { fg = p.sky, bg = active_bg, style = styles },
-        info_diagnostic = { fg = p.sky, bg = inactive_bg },
-        info_diagnostic_visible = { fg = p.sky, bg = inactive_bg },
-        info_diagnostic_selected = { fg = p.sky, bg = active_bg },
+        info = { fg = p.slate, bg = inactive_bg },
+        info_visible = { fg = p.slate, bg = inactive_bg },
+        info_selected = { fg = p.slate, bg = active_bg, style = styles },
+        info_diagnostic = { fg = p.slate, bg = inactive_bg },
+        info_diagnostic_visible = { fg = p.slate, bg = inactive_bg },
+        info_diagnostic_selected = { fg = p.slate, bg = active_bg },
 
         -- Hint
-        hint = { fg = p.teal, bg = inactive_bg },
-        hint_visible = { fg = p.teal, bg = inactive_bg },
-        hint_selected = { fg = p.teal, bg = active_bg, style = styles },
-        hint_diagnostic = { fg = p.teal, bg = inactive_bg },
-        hint_diagnostic_visible = { fg = p.teal, bg = inactive_bg },
-        hint_diagnostic_selected = { fg = p.teal, bg = active_bg },
+        hint = { fg = p.tide, bg = inactive_bg },
+        hint_visible = { fg = p.tide, bg = inactive_bg },
+        hint_selected = { fg = p.tide, bg = active_bg, style = styles },
+        hint_diagnostic = { fg = p.tide, bg = inactive_bg },
+        hint_diagnostic_visible = { fg = p.tide, bg = inactive_bg },
+        hint_diagnostic_selected = { fg = p.tide, bg = active_bg },
 
         -- Diagnostics
         diagnostic = { fg = p.subtext0, bg = inactive_bg },
@@ -86,9 +86,9 @@ local function groups(o)
         diagnostic_selected = { fg = p.subtext0, bg = active_bg, style = styles },
 
         -- Modified
-        modified = { fg = p.peach, bg = inactive_bg },
-        modified_visible = { fg = p.peach, bg = inactive_bg },
-        modified_selected = { fg = p.peach, bg = active_bg },
+        modified = { fg = p.frost, bg = inactive_bg },
+        modified_visible = { fg = p.frost, bg = inactive_bg },
+        modified_selected = { fg = p.frost, bg = active_bg },
     }
 
     return highlights

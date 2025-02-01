@@ -15,26 +15,26 @@ nvim-treesitter integration requires neovim 0.8
     local colors = {
         -- Identifiers
         ["@variable"] = { fg = p.text, style = o.styles.variables or {} },
-        ["@variable.builtin"] = { fg = p.red, style = o.styles.properties or {} },
-        ["@variable.parameter"] = { fg = p.maroon, style = o.styles.variables or {} },
-        ["@variable.member"] = { fg = p.lavender },
+        ["@variable.builtin"] = { fg = p.crimson, style = o.styles.properties or {} },
+        ["@variable.parameter"] = { fg = p.rust, style = o.styles.variables or {} },
+        ["@variable.member"] = { fg = p.fog },
 
         ["@constant"] = { link = "Constant" },
-        ["@constant.builtin"] = { fg = p.peach, style = o.styles.keywords or {} },
+        ["@constant.builtin"] = { fg = p.frost, style = o.styles.keywords or {} },
         ["@constant.macro"] = { link = "Macro" },
 
-        ["@module"] = { fg = p.lavender, style = o.styles.miscs or { "italic" } },
+        ["@module"] = { fg = p.fog, style = o.styles.miscs or { "italic" } },
         ["@label"] = { link = "Label" },
 
         -- Literals
         ["@string"] = { link = "String" },
-        ["@string.documentation"] = { fg = p.teal, style = o.styles.strings or {} },
-        ["@string.regexp"] = { fg = p.peach, style = o.styles.strings or {} },
-        ["@string.escape"] = { fg = p.pink, style = o.styles.strings or {} },
+        ["@string.documentation"] = { fg = p.tide, style = o.styles.strings or {} },
+        ["@string.regexp"] = { fg = p.frost, style = o.styles.strings or {} },
+        ["@string.escape"] = { fg = p.ember, style = o.styles.strings or {} },
         ["@string.special"] = { link = "Special" },
         ["@string.special.path"] = { link = "Special" },
-        ["@string.special.symbol"] = { fg = p.flamingo },
-        ["@string.special.url"] = { fg = p.rosewater, style = { "italic", "underline" } },
+        ["@string.special.symbol"] = { fg = p.rose },
+        ["@string.special.url"] = { fg = p.seafoam, style = { "italic", "underline" } },
 
         ["@character"] = { link = "Character" },
         ["@character.special"] = { link = "SpecialChar" },
@@ -45,22 +45,22 @@ nvim-treesitter integration requires neovim 0.8
 
         -- Types
         ["@type"] = { link = "Type" },
-        ["@type.builtin"] = { fg = p.yellow, style = o.styles.properties or { "italic" } },
+        ["@type.builtin"] = { fg = p.crimson, style = o.styles.properties or { "italic" } },
         ["@type.definition"] = { link = "Type" },
 
         ["@attribute"] = { link = "Constant" },
-        ["@property"] = { fg = p.lavender, style = o.styles.properties or {} },
+        ["@property"] = { fg = p.fog, style = o.styles.properties or {} },
 
         -- Functions
         ["@function"] = { link = "Function" },
-        ["@function.builtin"] = { fg = p.peach, style = o.styles.functions or {} },
+        ["@function.builtin"] = { fg = p.frost, style = o.styles.functions or {} },
         ["@function.call"] = { link = "Function" },
-        ["@function.macro"] = { fg = p.teal, style = o.styles.functions or {} },
+        ["@function.macro"] = { fg = p.tide, style = o.styles.functions or {} },
 
         ["@function.method"] = { link = "Function" },
         ["@function.method.call"] = { link = "Function" },
 
-        ["@constructor"] = { fg = p.sapphire },
+        ["@constructor"] = { fg = p.drift },
         ["@operator"] = { link = "Operator" },
 
         -- Keywords
@@ -68,11 +68,11 @@ nvim-treesitter integration requires neovim 0.8
         ["@keyword.modifier"] = { link = "Keyword" },
         ["@keyword.type"] = { link = "Keyword" },
         ["@keyword.coroutine"] = { link = "Keyword" },
-        ["@keyword.function"] = { fg = p.mauve, style = o.styles.keywords or {} },
+        ["@keyword.function"] = { fg = p.storm, style = o.styles.keywords or {} },
         ["@keyword.operator"] = { link = "Operator" },
         ["@keyword.import"] = { link = "Include" },
         ["@keyword.repeat"] = { link = "Repeat" },
-        ["@keyword.return"] = { fg = p.mauve, style = o.styles.keywords or {} },
+        ["@keyword.return"] = { fg = p.storm, style = o.styles.keywords or {} },
         ["@keyword.debug"] = { link = "Exception" },
         ["@keyword.exception"] = { link = "Exception" },
 
@@ -82,7 +82,7 @@ nvim-treesitter integration requires neovim 0.8
         ["@keyword.directive"] = { link = "PreProc" },
         ["@keyword.directive.define"] = { link = "Define" },
         -- JS & derivative
-        ["@keyword.export"] = { fg = p.sky, style = o.styles.keywords },
+        ["@keyword.export"] = { fg = p.slate, style = o.styles.keywords },
 
         -- Punctuation
         ["@punctuation.delimiter"] = { link = "Delimiter" },
@@ -93,34 +93,34 @@ nvim-treesitter integration requires neovim 0.8
         ["@comment"] = { link = "Comment" },
         ["@comment.documentation"] = { link = "Comment" },
 
-        ["@comment.error"] = { fg = p.base, bg = p.red },
-        ["@comment.warning"] = { fg = p.base, bg = p.yellow },
-        ["@comment.hint"] = { fg = p.base, bg = p.blue },
-        ["@comment.todo"] = { fg = p.base, bg = p.flamingo },
-        ["@comment.note"] = { fg = p.base, bg = p.rosewater },
+        ["@comment.error"] = { fg = p.base, bg = p.crimson },
+        ["@comment.warning"] = { fg = p.base, bg = p.rust },
+        ["@comment.hint"] = { fg = p.base, bg = p.charcoal },
+        ["@comment.todo"] = { fg = p.base, bg = p.rose },
+        ["@comment.note"] = { fg = p.base, bg = p.seafoam },
 
         -- Markup
         ["@markup"] = { fg = p.text },
-        ["@markup.strong"] = { fg = p.maroon, style = { "bold" } },
-        ["@markup.italic"] = { fg = p.maroon, style = { "italic" } },
+        ["@markup.strong"] = { fg = p.rust, style = { "bold" } },
+        ["@markup.italic"] = { fg = p.rust, style = { "italic" } },
         ["@markup.strikethrough"] = { fg = p.text, style = { "strikethrough" } },
         ["@markup.underline"] = { link = "Underlined" },
 
-        ["@markup.heading"] = { fg = p.blue, style = { "bold" } },
+        ["@markup.heading"] = { fg = p.charcoal, style = { "bold" } },
 
-        ["@markup.math"] = { fg = p.blue },
-        ["@markup.quote"] = { fg = p.maroon, style = { "bold" } },
-        ["@markup.environment"] = { fg = p.pink },
-        ["@markup.environment.name"] = { fg = p.blue },
+        ["@markup.math"] = { fg = p.charcoal },
+        ["@markup.quote"] = { fg = p.rust, style = { "bold" } },
+        ["@markup.environment"] = { fg = p.ember },
+        ["@markup.environment.name"] = { fg = p.charcoal },
 
         ["@markup.link"] = { link = "Tag" },
         ["@markup.link.label"] = { link = "Label" },
-        ["@markup.link.url"] = { fg = p.rosewater, style = { "italic", "underline" } },
+        ["@markup.link.url"] = { fg = p.seafoam, style = { "italic", "underline" } },
 
-        ["@markup.raw"] = { fg = p.teal },
+        ["@markup.raw"] = { fg = p.tide },
 
         ["@markup.list"] = { link = "Special" },
-        ["@markup.list.checked"] = { fg = p.green },
+        ["@markup.list.checked"] = { fg = p.sage },
         ["@markup.list.unchecked"] = { fg = p.overlay1 },
 
         -- Diff
@@ -129,16 +129,16 @@ nvim-treesitter integration requires neovim 0.8
         ["@diff.delta"] = { link = "diffChanged" },
 
         -- Tags
-        ["@tag"] = { fg = p.mauve },
-        ["@tag.attribute"] = { fg = p.teal, style = o.styles.miscs or { "italic" } },
-        ["@tag.delimiter"] = { fg = p.sky },
+        ["@tag"] = { fg = p.storm },
+        ["@tag.attribute"] = { fg = p.tide, style = o.styles.miscs or { "italic" } },
+        ["@tag.delimiter"] = { fg = p.slate },
 
         -- Misc
         ["@error"] = { link = "Error" },
 
         -- Language specific:
         -- bash
-        ["@function.builtin.bash"] = { fg = p.red, style = o.styles.miscs or { "italic" } },
+        ["@function.builtin.bash"] = { fg = p.crimson, style = o.styles.miscs or { "italic" } },
 
         -- markdown
         ["@markup.heading.1.markdown"] = { link = "rainbow1" },
@@ -149,57 +149,57 @@ nvim-treesitter integration requires neovim 0.8
         ["@markup.heading.6.markdown"] = { link = "rainbow6" },
 
         -- java
-        ["@constant.java"] = { fg = p.teal },
+        ["@constant.java"] = { fg = p.tide },
 
         -- css
-        ["@property.css"] = { fg = p.lavender },
-        ["@property.id.css"] = { fg = p.blue },
-        ["@property.class.css"] = { fg = p.yellow },
-        ["@type.css"] = { fg = p.lavender },
-        ["@type.tag.css"] = { fg = p.mauve },
-        ["@string.plain.css"] = { fg = p.peach },
-        ["@number.css"] = { fg = p.peach },
+        ["@property.css"] = { fg = p.fog },
+        ["@property.id.css"] = { fg = p.charcoal },
+        ["@property.class.css"] = { fg = p.crimson },
+        ["@type.css"] = { fg = p.fog },
+        ["@type.tag.css"] = { fg = p.storm },
+        ["@string.plain.css"] = { fg = p.frost },
+        ["@number.css"] = { fg = p.frost },
 
         -- toml
-        ["@property.toml"] = { fg = p.blue },
+        ["@property.toml"] = { fg = p.charcoal },
 
         -- json
-        ["@label.json"] = { fg = p.blue },
+        ["@label.json"] = { fg = p.charcoal },
 
         -- lua
-        ["@constructor.lua"] = { fg = p.flamingo },
+        ["@constructor.lua"] = { fg = p.rose },
 
         -- typescript
-        ["@property.typescript"] = { fg = p.lavender, style = o.styles.properties or {} },
-        ["@constructor.typescript"] = { fg = p.lavender },
+        ["@property.typescript"] = { fg = p.fog, style = o.styles.properties or {} },
+        ["@constructor.typescript"] = { fg = p.fog },
 
         -- TSX (Typescript React)
-        ["@constructor.tsx"] = { fg = p.lavender },
-        ["@tag.attribute.tsx"] = { fg = p.teal, style = o.styles.miscs or { "italic" } },
+        ["@constructor.tsx"] = { fg = p.fog },
+        ["@tag.attribute.tsx"] = { fg = p.tide, style = o.styles.miscs or { "italic" } },
 
         -- yaml
-        ["@variable.member.yaml"] = { fg = p.blue },
+        ["@variable.member.yaml"] = { fg = p.charcoal },
 
         -- Ruby
-        ["@string.special.symbol.ruby"] = { fg = p.flamingo },
+        ["@string.special.symbol.ruby"] = { fg = p.rose },
 
         -- PHP
         ["@function.method.php"] = { link = "Function" },
         ["@function.method.call.php"] = { link = "Function" },
 
         -- C/CPP
-        ["@type.builtin.c"] = { fg = p.yellow, style = {} },
+        ["@type.builtin.c"] = { fg = p.crimson, style = {} },
         ["@property.cpp"] = { fg = p.text },
-        ["@type.builtin.cpp"] = { fg = p.yellow, style = {} },
+        ["@type.builtin.cpp"] = { fg = p.crimson, style = {} },
 
         -- gitcommit
-        ["@comment.warning.gitcommit"] = { fg = p.yellow },
+        ["@comment.warning.gitcommit"] = { fg = p.rust },
 
         -- gitignore
         ["@string.special.path.gitignore"] = { fg = p.text },
 
         -- Misc
-        gitcommitSummary = { fg = p.rosewater, style = o.styles.miscs or { "italic" } },
+        gitcommitSummary = { fg = p.seafoam, style = o.styles.miscs or { "italic" } },
         zshKSHFunction = { link = "Function" },
     }
 

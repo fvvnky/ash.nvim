@@ -5,9 +5,9 @@ local function groups()
         WhichKey = { link = "NormalFloat" },
         WhichKeyBorder = { link = "FloatBorder" },
 
-        WhichKeyGroup = { fg = p.blue },
+        WhichKeyGroup = { fg = p.charcoal },
         WhichKeySeparator = { fg = p.overlay0 },
-        WhichKeyDesc = { fg = p.pink },
+        WhichKeyDesc = { fg = p.ember },
         WhichKeyValue = { fg = p.overlay0 },
     }
 end

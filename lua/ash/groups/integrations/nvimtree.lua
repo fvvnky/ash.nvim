@@ -2,25 +2,25 @@ local p = require("ash.palette")
 
 local function groups(o)
     return {
-        NvimTreeFolderName = { fg = p.blue },
-        NvimTreeFolderIcon = { fg = p.blue },
+        NvimTreeFolderName = { fg = p.charcoal },
+        NvimTreeFolderIcon = { fg = p.charcoal },
         NvimTreeNormal = { fg = p.text, bg = o.transparent and p.none or p.mantle },
-        NvimTreeOpenedFolderName = { fg = p.blue },
-        NvimTreeEmptyFolderName = { fg = p.blue },
+        NvimTreeOpenedFolderName = { fg = p.charcoal },
+        NvimTreeEmptyFolderName = { fg = p.charcoal },
         NvimTreeIndentMarker = { fg = p.overlay0 },
         NvimTreeWinSeparator = {
             fg = o.transparent and p.surface1 or p.base,
             bg = o.transparent and p.none or p.base,
         },
-        NvimTreeRootFolder = { fg = p.lavender, style = { "bold" } },
-        NvimTreeSymlink = { fg = p.pink },
+        NvimTreeRootFolder = { fg = p.fog, style = { "bold" } },
+        NvimTreeSymlink = { fg = p.ember },
         NvimTreeStatuslineNc = { fg = p.mantle, bg = p.mantle },
-        NvimTreeGitDirty = { fg = p.yellow },
-        NvimTreeGitNew = { fg = p.blue },
-        NvimTreeGitDeleted = { fg = p.red },
-        NvimTreeSpecialFile = { fg = p.flamingo },
+        NvimTreeGitDirty = { fg = p.rust },
+        NvimTreeGitNew = { fg = p.charcoal },
+        NvimTreeGitDeleted = { fg = p.crimson },
+        NvimTreeSpecialFile = { fg = p.rose },
         NvimTreeImageFile = { fg = p.text },
-        NvimTreeOpenedFile = { fg = p.pink },
+        NvimTreeOpenedFile = { fg = p.ember },
     }
 end
 

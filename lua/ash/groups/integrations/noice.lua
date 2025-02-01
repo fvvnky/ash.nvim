@@ -4,14 +4,14 @@ local p = require("ash.palette")
 local function groups(o)
     return {
         NoiceCmdline = { fg = p.text },
-        NoiceCmdlineIcon = { fg = p.sky },
-        NoiceCmdlineIconSearch = { fg = p.yellow },
-        NoiceCmdlinePopupBorder = { fg = p.lavender },
-        NoiceCmdlinePopupBorderSearch = { fg = p.yellow },
-        NoiceConfirmBorder = { fg = p.blue },
+        NoiceCmdlineIcon = { fg = p.slate },
+        NoiceCmdlineIconSearch = { fg = p.crimson },
+        NoiceCmdlinePopupBorder = { fg = p.fog },
+        NoiceCmdlinePopupBorderSearch = { fg = p.crimson },
+        NoiceConfirmBorder = { fg = p.charcoal },
         NoiceMini = { fg = p.subtext0, blend = 0 },
         NoiceFormatProgressDone = {
-            bg = o.transparent and p.none or c.darken(p.sky, 0.30, p.base),
+            bg = o.transparent and p.none or c.darken(p.slate, 0.30, p.base),
             fg = p.subtext0,
         },
         NoiceFormatProgressTodo = {
