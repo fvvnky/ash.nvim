@@ -32,15 +32,13 @@ end
 
 local function compile(o)
     local lines = {
-        string.format(
-            [[
+        [[
 return string.dump(function()
 vim.o.termguicolors = true
 if vim.g.colors_name then vim.cmd("hi clear") end
-vim.g.colors_name = "ash-%s"
+vim.o.background = "dark"
+vim.g.colors_name = "ash"
 local h = vim.api.nvim_set_hl]],
-            "dark"
-        ),
     }
     if path.sep == "\\" then
         o.compile_path = o.compile_path:gsub("/", "\\")
