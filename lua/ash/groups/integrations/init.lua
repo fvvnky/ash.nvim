@@ -2,6 +2,7 @@ local bufferline = require("ash.groups.integrations.bufferline")
 local cmp = require("ash.groups.integrations.cmp")
 local dap = require("ash.groups.integrations.dap")
 local fzf = require("ash.groups.integrations.fzf")
+local lsp = require("ash.groups.integrations.lsp")
 local lspsaga = require("ash.groups.integrations.lspsaga")
 local noice = require("ash.groups.integrations.noice")
 local nvimtree = require("ash.groups.integrations.nvimtree")
@@ -16,6 +17,7 @@ return {
     cmp = cmp,
     dap = dap,
     fzf = fzf,
+    lsp = lsp,
     lspsaga = lspsaga,
     noice = noice,
     nvimtree = nvimtree,
