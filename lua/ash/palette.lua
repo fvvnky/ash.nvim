@@ -21,6 +21,6 @@ return {
     rust = "#a37866", -- earthy muted brown
     seafoam = "#8faea7", -- gentle teal green
     sage = "#8c9c8d", -- soft green-gray
-    tide = "#7995a0", -- muted sea blue
+    tide = "#00ff00", -- muted sea blue
     fog = "#ffffff", -- cool mist gray
 }
