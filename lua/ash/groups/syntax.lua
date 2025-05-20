@@ -75,8 +75,8 @@ local function groups(o)
 
         -- nvim
         healthError = { fg = p.crimson },
-        healthSuccess = { fg = p.tide },
-        healthWarning = { fg = p.crimson },
+        healthSuccess = { fg = p.sage },
+        healthWarning = { fg = p.ember },
 
         -- glyphs
         GlyphPalette1 = { fg = p.crimson },
