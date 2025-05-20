@@ -4,24 +4,26 @@ return {
     subtext1 = "#dddddd", -- lighter gray (secondary text)
     subtext0 = "#aaaaaa", -- darker than text, but lighter than overlays
 
-    overlay2 = "#8a8a8a", -- medium-light neutral gray
-    overlay1 = "#707070", -- medium gray
-    overlay0 = "#606060", -- darker gray
-    surface2 = "#4a4a4a", -- charcoal gray
-    surface1 = "#2f2f2f", -- near-black, neutral
-    surface0 = "#1a1a1a", -- black
+    overlay2 = "#dddddd", -- light neutral gray
+    overlay1 = "#aaaaaa", -- medium gray
+    overlay0 = "#888888", -- medium-dark gray
+    surface2 = "#555555", -- dark gray
+    surface1 = "#404040", -- very dark gray
+    surface0 = "#151515", -- near black
     base = "#000000",
     mantle = "#020203",
     crust = "#050505",
-    seafoam = "#aabbb5", -- dulled sea green
-    rose = "#b3989a", -- muted dusty pink
-    ember = "#b29b89", -- dull amber
+
+    crimson = "#ad7479", -- warm muted red
+    rose = "#b99395", -- dusty pink
+    ember = "#b19784", -- soft amber
+    rust = "#a37866", -- earthy muted brown
+    seafoam = "#8faea7", -- gentle teal green
+    sage = "#8c9c8d", -- soft green-gray
+    tide = "#7995a0", -- muted sea blue
+
     storm = "#959da6", -- soft bluish gray
-    crimson = "#a37b80", -- soft desaturated red
-    rust = "#a78678", -- earthy brownish
     frost = "#a2abad", -- light steel gray
-    sage = "#a4afa4", -- dusty green-gray
-    tide = "#8fa2a7", -- muted sea blue
     slate = "#878892", -- desaturated cool gray
     drift = "#9aa6a8", -- pale blue-gray
     charcoal = "#747680", -- softened dark gray
