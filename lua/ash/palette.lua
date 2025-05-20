@@ -1,15 +1,15 @@
 return {
     none = "NONE",
-    text = "#dddddd", -- medium-light gray (main text)
-    subtext1 = "#a0a0a0", -- lighter gray (secondary text)
-    subtext0 = "#787878", -- darker than text, but lighter than overlays
+    text = "#eeeeee", -- medium-light gray (main text)
+    subtext1 = "#dddddd", -- lighter gray (secondary text)
+    subtext0 = "#aaaaaa", -- darker than text, but lighter than overlays
 
     overlay2 = "#8a8a8a", -- medium-light neutral gray
     overlay1 = "#707070", -- medium gray
     overlay0 = "#606060", -- darker gray
     surface2 = "#4a4a4a", -- charcoal gray
     surface1 = "#2f2f2f", -- near-black, neutral
-    surface0 = "#1a1aff",
+    surface0 = "#1a1a1a", -- black
     base = "#000000",
     mantle = "#020203",
     crust = "#050505",
